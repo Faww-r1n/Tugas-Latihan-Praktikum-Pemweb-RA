@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Sembako Pak Qris</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>TOKO SEMBAKO PAK QRIS</h1>
+    <div class="container">
+        <div class="row">
+            <div class="product-section col-8">
+                <h2>Produk</h2>
+                <div class="product-list">
+                    <div class="product">
+                        <img src="./asset/motherboard.png" alt="MotherBoard">
+                        <p>MotherBoard</p>
+                        <div class="price-qty">
+                            <p>Rp. 500.000</p>
+                            <input type="number" value="0" min="0" id="qty-motherboard">
+                        </div>
+                        <button onclick="addToCart('MotherBoard', 500000, 'qty-motherboard')">Add To Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="./asset/ram.png" alt="Ram DDR4">
+                        <p>Ram DDR4</p>
+                        <div class="price-qty">
+                            <p>Rp. 200.000</p>
+                            <input type="number" value="0" min="0" id="qty-ram">
+                        </div>
+                        <button onclick="addToCart('Ram DDR4', 200000, 'qty-ram')">Add To Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="./asset/thermalpaste.png" alt="Thermal Paste">
+                        <p>Thermal Paste</p>
+                        <div class="price-qty">
+                            <p>Rp. 100.000</p>
+                            <input type="number" value="0" min="0" id="qty-thermalpaste">
+                        </div>
+                        <button onclick="addToCart('Thermal Paste', 100000, 'qty-thermalpaste')">Add To Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="./asset/gpu.webp" alt="RTX 4090">
+                        <p>RTX 4090</p>
+                        <div class="price-qty">
+                            <p>Rp. 800.000</p>
+                            <input type="number" value="0" min="0" id="qty-gpu">
+                        </div>
+                        <button onclick="addToCart('RTX 4090', 800000, 'qty-gpu')">Add To Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="./asset/cpu.png" alt="Core i9-7980XE">
+                        <p>Core i9-7980XE</p>
+                        <div class="price-qty">
+                            <p>Rp. 650.000</p>
+                            <input type="number" value="0" min="0" id="qty-cpu">
+                        </div>
+                        <button onclick="addToCart('Core i9-7980XE', 650000, 'qty-cpu')">Add To Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="./asset/ssd.png" alt="SSD 2TB">
+                        <p>SSD 2TB</p>
+                        <div class="price-qty">
+                            <p>Rp. 350.000</p>
+                            <input type="number" value="0" min="0" id="qty-ssd">
+                        </div>
+                        <button onclick="addToCart('SSD 2TB', 350000, 'qty-ssd')">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-section col-4">
+                <h2>Keranjang Belanja</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Produk</th>
+                            <th>Harga</th>
+                            <th>Qty</th>
+                            <th>Subtotal</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items">
+                    </tbody>
+                </table>
+                <div class="discount-message" id="discount-message"></div>
+                <div class="total-price">
+                    <strong>Total Harga:</strong><span id="total-price">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

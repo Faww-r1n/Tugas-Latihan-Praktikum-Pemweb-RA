@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+.col-8 {
+    flex: 6;
+}
+
+.col-4 {
+    flex: 6;
+}
+
+.product-section h2, .cart-section h2 {
+    color: #333;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product img {
+    width: 241px;
+    height: 241px;
+    margin-bottom: 10px;
+}
+
+.price-qty {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.price-qty p {
+    margin: 0;
+}
+
+.product input[type="number"] {
+    width: 50px;
+    text-align: center;
+}
+
+.product button {
+    background-color: #00ff66;
+    width: 250px;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: auto;
+}
+
+.cart-section {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 20px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+td {
+    border-bottom: 1px solid #ddd;
+}
+
+td button {
+    background-color: #ff4d4d;
+    border: none;
+    padding: 5px 10px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.total-price {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.discount-message {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #e7f4e4;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+    border-radius: 5px;
+}
